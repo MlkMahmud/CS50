@@ -1,13 +1,13 @@
 #include <stdio.h>
 
-int get_height(void) {
+int get_height () {
+  char line[5];
   int height;
   do {
     printf("Height: ");
-    scanf("%i", &height);
-  } while (height < 1 || height > 8);
-
-  return height;
+    fgets(line, sizeof(line), stdin);
+  } while (sscanf(line, "%i", &height) != 1 || height < 1 || height > 8);
+    return height;
 }
 
 int main (void) {
@@ -19,3 +19,4 @@ int main (void) {
     printf("%.*s%.*s  %.*s\n", height - i, padding, i, bricks, i, bricks);
   }
 }
+   
