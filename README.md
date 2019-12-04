@@ -1,2 +1,2 @@
 # CS50
-My CS50 2019 problem set solutions.
+My CS50 problem set solutions without the CS50 helpers.
