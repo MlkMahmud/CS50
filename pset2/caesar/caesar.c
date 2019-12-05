@@ -10,8 +10,8 @@ int main (int argc, char *argv[]) {
   int lowerBound = 96;
   int upperBound = 122;
 
-  if (argc != 2 || sscanf(argv[1], "%i", &key) != 1) {
-    printf("Usage: ./caesar key\n");
+  if (argc != 2 || sscanf(argv[1], "%i", &key) != 1 || key < 1) {
+    printf("Usage: ./caesar key\nKey must be an integer >= 1");
     exit(1);
   }
 
