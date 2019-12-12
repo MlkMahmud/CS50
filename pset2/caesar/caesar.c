@@ -16,7 +16,7 @@ int main (int argc, char *argv[]) {
   }
 
 
-  printf("plaintext: ");
+  puts("plaintext: ");
   fgets(plaintext, sizeof(plaintext), stdin);
 
   long textLength = strlen(plaintext);
